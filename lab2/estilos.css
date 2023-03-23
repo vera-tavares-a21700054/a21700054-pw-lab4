@@ -1,0 +1,180 @@
+*::selection {
+    color: rgb(41, 17, 107);
+    background-color: rgb(141, 140, 138);
+}
+
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0px;
+}
+
+
+header {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+header ul {
+    display: flex;
+    list-style: none;
+    background-color: rgb(35, 35, 35);
+    margin: 0px;
+    padding: 10px 10px;
+    justify-content: center;
+}
+
+header ul li>a {
+    margin-right: 10px;
+    margin-right: 10px;
+    color: rgb(58, 19, 129);
+    text-decoration: none;
+}
+
+nav{
+    text-align: center;
+    background-color: rgb(48, 6, 97);
+    padding: 12px 12px;
+    color: white;
+    margin-top: 3rem;    
+}
+
+#menu:hover::before {content: ">";}
+#menu:hover::after {content: "<";}    
+
+.main-container {
+    max-width: 1000px;
+    text-align: left;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.wrapper-galeria {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 16px;
+}
+
+.wrapper-galeria img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.area-quizz ol li.wrapper-questao {
+    text-align: left;
+    margin-top: 3rem;
+}
+
+.area-quizz ol li:first-child {
+    margin-top: 0rem;
+}
+
+.area-quizz label {
+    font-weight: 600;
+
+}
+
+.area-quizz ol li label:first-child {
+    display: block;
+}
+
+.text-align-left {
+    text-align: left;
+
+}
+
+table thead th {
+    background-color: #3b166b;
+    padding: 10px 10px;
+    color: white;
+}
+
+table thead th::first-letter {
+    text-transform: uppercase;
+}
+
+table tbody tr:nth-child(even) {
+    background-color: #e7e7e7;
+}
+
+table tbody tr td {
+    padding: 1rem 10px;
+    text-align: justify;
+}
+
+table tbody tr td:nth-child(2) {
+    text-align: left;
+    font-weight: bold;
+}
+
+[data="done"] {
+    color: green;
+}
+
+[data="close"] {
+    color: red;
+}
+
+[src="images/img_1.jpeg"] {
+    box-shadow: 0px 2px 20px 5px rgba(51, 49, 49, 0.04);
+}
+
+section {
+    margin-bottom: 3rem;
+}
+
+section:last-child {
+    margin-bottom: 0px;
+}
+
+a:hover {
+    color: rgba(192, 191, 189, 0.642);
+}
+
+a:visited {
+    color: rgb(109, 109, 109);
+}
+
+a:active {
+    font-weight: bold;
+}
+
+:target {
+    color: rgb(164, 148, 223);
+}
+
+header a:visited {
+    color: rgb(255, 255, 255);
+}
+
+img {
+    border:4px solid #7775e9;
+    color: black;
+}
+
+iframe {
+    border:4px solid #7775e9; 
+}
+
+
+form button {
+    background-color: rgb(148, 147, 144);
+    padding: 0.8rem 2rem;
+    color: rgb(27, 17, 75);
+    transition: all ease-in-out 0.2s;
+    border: rgb(134, 133, 131);
+    font-weight: bold;
+}
+
+form button:hover {
+    background-color: rgb(135, 88, 0);
+    border: rgb(135, 88, 0);
+}
+
+footer {
+    text-align: center;
+    background-color: rgb(48, 6, 97);
+    padding: 10px 10px;
+    color: white;
+    margin-top: 3rem;
+}

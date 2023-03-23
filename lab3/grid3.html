@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Vera Tavares">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+    <div class="grid-container">
+        <div class="item1"></div>
+        <div class="item2">
+            <div class="grid-item"><a href="grid1.html">Grid1</a></div>
+            <div class="grid-item"><a href="grid2.html">Grid2</a></div>
+            <div class="grid-item"><a href="grid4.html">Grid4</a></div>
+            <div class="grid-item"><a href="grid5.html">Grid5</a></div>
+            <div class="grid-item"><a href="grid6.html">Grid6</a></div>
+            <div class="grid-item"><a href="index.html">Flex</a></div>
+        </div>
+        <div class="item3"></div>
+        <div class="item4"></div>
+        <div class="item5"></div>
+    </div>
+</body>
+
+
+<style>
+    .item1 {
+        grid-area: header;
+        width: 100%;
+        background-image: url("images/grid3.JPG");
+        background-size: cover;
+    }
+
+    .item2 {
+        grid-area: nav;
+        background-color: rgb(216, 215, 213);
+    }
+
+    .item3 {
+        grid-area: main;
+        display: grid;
+        column-gap: 10px;
+        row-gap: 10px;
+        grid-template-columns: auto auto auto;
+        background-color: rgb(169, 238, 232);
+    }
+
+    .item4 {
+        grid-area: right;
+        background-color: rgb(140, 230, 233);
+    }
+
+    .item5 {
+        grid-area: footer;
+        width: 100%;
+        height: 100%;
+        background-image: url("images/grid3.JPG");
+        background-size: cover;
+    
+    }
+
+    .grid-container {
+        display: grid;
+        height: 800px;
+        grid-template-columns: 1fr 2fr 1fr; 
+        grid-template-rows: 1fr 2fr 1fr;
+        grid-template-areas:
+            'header header header'
+            'nav main right'
+            'footer footer footer';
+    }
+
+    .grid-item {
+        background-color: lightblue;
+        border: 1px solid black;
+        padding: 20px;
+        font-size: 30px;
+        text-align: center;
+        margin: 20px;
+    }
+</style>
+</html>

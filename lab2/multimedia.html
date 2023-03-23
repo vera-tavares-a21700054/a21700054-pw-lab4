@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <title> Singapura </title>
+
+    <meta charset="utf-8">
+    <meta name="author" content="Vera Tavares">
+    <meta name="description" content="Website sobre Singapura">
+    <meta name="keywords" content="Lion City, Gardens by the Bay, Marina Bay, The Merlion, Marina Bay Sands">
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1> Singapura </h1>
+        <figure>
+            <img src="images/Singapura.png" alt="Singapura">
+            <details>
+                <figcaption>Cidade de Singapura - Singapura</figcaption>
+            </details>
+        </figure>
+        <br>
+        <section>
+            <nav>
+                <a href="index.html" id="menu"> 🏯 Introdução</a>
+                <a href="local.html" id="menu"> 🗾Localização</a>
+                <b><a href="multimedia.html" id="menu"> 📷Multimedia</a></b>
+                <a href="info.html" id="menu"> ℹ️ Informação</a>
+                <a href="quizz.html" id="menu"> 🎓Quizz</a>
+                <a href="html5-css.html" id="menu"> 👌 HTML5 e CSS</a>
+            </nav>
+        </section>
+    </header>
+    <main class="main-container">
+        <section>
+
+            <h3>Multimedia</h3>
+            <p>Pequena em tamanho, a "Lion City" oferece grandes encantos, e construções incriveis.</p>
+            <br>
+            <a href="#video">Video</a>
+            <a href="#fotografias">Fotografias</a>
+            <a href="#poema">Poema</a>
+            <br>
+
+            <figure>
+                <h3 id="video">Video</h3>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/PpA9iIt0kGs"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+                <details>
+                    <figcaption>Singapura num minuto</figcaption>
+                </details>
+            </figure>
+        </section>
+        <br>
+        <section>
+            <h3 id="fotografias">Fotografias</h3>
+            <iframe name="foto" width="600" height="400" src="images/Singapura1_grande.png">
+                title="Descubra um pouco mais de Singapura"></iframe>
+            <br>
+            <img src="images/Singapura1_pequena.png"
+                onclick="document.getElementsByName('foto')[0].src='images/Singapura1_grande.png'"
+                alt="Marina Bay Sands">
+            <img src="images/Singapura2_pequena.png"
+                onclick="document.getElementsByName('foto')[0].src='images/Singapura2_grande.png'"
+                alt="Marina Bay Sands_2">
+            <img src="images/Singapura3_pequena.png"
+                onclick="document.getElementsByName('foto')[0].src='images/Singapura3_grande.png'" alt="Singapura 3">
+            <img src="images/Singapura4_pequena.png"
+                onclick="document.getElementsByName('foto')[0].src='images/Singapura4_grande.png'" alt="Gardens by the
+                Bay">
+        </section>
+
+        <section>
+            <h3 id="poema">Poema</h3>
+            <span>Título: Singapore</span><br>
+            <span>Autor: Valéria Cheshire Éméline</span><br>
+            <p id="textoPoema" name="textoPoema">
+                “An elegant orchid in full bloom,<br>
+                A nation of harmony, peace and justice...<br>
+                Singapore ??? They ask.<br>
+                What race are those people ?<br>
+                As they guess and ponder...<br>
+                Different ethnic foods hold the answers.”
+            </p>
+        </section>
+
+    </main>
+</body>
+
+<br>
+<br>
+<footer>Vera Tavares | a21700054 | ULHT - Universidade Lusófona de Humanidades e Tecnologias | 2023</footer>
+
+</html>

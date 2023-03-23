@@ -1,0 +1,147 @@
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+#menu:hover::before {content: ">";}
+#menu:hover::after {content: "<";}    
+
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(221, 219, 223);
+    color:  rgb(50, 3, 94);
+    font-weight: bold;
+    padding: 20px;
+    width: 100%;
+}
+
+/* nav{
+    text-align: right;
+    font-weight: bold;
+    background-color: rgb(221, 219, 223);
+    color: rgb(50, 3, 94);
+    margin-top: 2rem;    
+    padding: 20px;
+} */
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    width: 100vw;
+    background-color: rgb(173, 240, 225);
+    color: rgb(116, 115, 117);
+    font-size: 4rem;
+}
+
+.pos-relative img {
+    position: relative;
+    width: 100%;
+    top: 10px;
+}
+
+.pos-relative {
+    position: relative;
+}
+
+
+.pos-absolute {
+    position: absolute;
+    top: 10px; left: 10px;
+    font-size: 4rem;
+    color: rgb(241, 238, 245);
+}
+
+.capitais {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(173, 240, 225);
+    padding: 50px
+}
+
+.capitais div {
+    display: flex;
+    justify-content: space-around;
+    border-radius: 20px;
+    box-shadow: 5px 5px 15px #535353;
+    margin: 10px;
+}
+
+.capitais div img {
+    border-radius: 20px 0 0 20px;
+    height: 100%;
+}
+
+
+.capitais div div:last-child {
+    width: 150px;
+    background-color: rgb(236, 232, 232);
+    padding: 20px;
+    border-radius: 0 20px 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper {
+    position: relative;
+}
+
+.wrapper img {
+    clip: rect(0px,80px,120px,0px);
+    border-radius: 20px 20px 20px 20px;
+    width: 300px;
+    height: 200px;
+}
+
+.wrapper div p {
+    position: absolute;
+    bottom: 5px;
+    left: 15px;
+    color: white;
+}
+
+.wrapper div:hover {
+    display: none;
+}
+
+
+.bus {
+    position: absolute;
+    z-index: 0;
+    top: 50px;
+    left: 120px;
+}
+
+.plane {
+    position: absolute;
+    z-index: 1;
+    top: 150px;
+    left: 220px;
+}
+
+
+.car {
+    position: absolute;
+    z-index: 2;
+    top: 250px;
+    left: 320px;
+}
+
+.train {
+    position: absolute;
+    z-index: 3;
+    top: 350px;
+    left: 420px;
+}
+

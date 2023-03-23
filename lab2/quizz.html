@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <title> Singapura </title>
+
+    <meta charset="utf-8">
+    <meta name="author" content="Vera Tavares">
+    <meta name="description" content="Website sobre Singapura">
+    <meta name="keywords" content="Lion City, Gardens by the Bay, Marina Bay, The Merlion, Marina Bay Sands">
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1> Singapura </h1>
+        <figure>
+            <img src="images/Singapura.png" alt="Singapura">
+            <details>
+                <figcaption>Cidade de Singapura - Singapura</figcaption>
+            </details>
+        </figure>
+        <br>
+        <section>
+            <nav>
+                <a href="index.html" id="menu"> 🏯 Introdução</a>
+                <a href="local.html" id="menu"> 🗾Localização</a>
+                <a href="multimedia.html" id="menu"> 📷Multimedia</a>
+                <a href="info.html" id="menu"> ℹ️ Informação</a>
+                <b><a href="quizz.html" id="menu"> 🎓Quizz</a></b>
+                <a href="html5-css.html"id="menu"> 👌 HTML5 e CSS</a>
+            </nav>
+        </section>
+    </header>
+    <main class="main-container">
+        <section>
+
+            <h3>Quizz</h3>
+            <p>Tem Singapura na ponta da língua? Teste os seus conhecimentos.</p>
+
+            <section>
+                <form method="POST" action="mailto: veramstavares@outlook.com" enctype="multipart/form-data">
+                <fieldset>
+                    
+                    <legend>Singapura Quick Quizz</legend>
+                    <br>
+                    <fieldset class="text-align-left">
+                        <legend>Info</legend>
+                        <label for="nome">Nome </label>
+                        <input type="text" id="nome" placeholder="Nome" required size="50" autocomplete autofocus
+                            pattern="[A-Za-zÀ-ú]+">
+                        <label for="apelido">Apelido </label>
+                        <input type="text" id="apelido" placeholder="Apelido" required size="50" autocomplete
+                            pattern="[A-Za-zÀ-ú]+">
+                        <label for="email">Email </label>
+                        <input type="email" id="email" placeholder="Email" required autocomplete size="50" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
+                    </fieldset>
+                    <br>
+                    <fieldset class="text-align-left">
+                        <legend>Perguntas</legend>
+                        <br>
+                        <ol>
+                            <li class="wrapper-questao">
+                                <label>Qual é a capital de Singapura?</label>
+                                <br>
+                                <input type="text" name="capital" required>
+                            </li>
+                            <br>
+                            <li class="wrapper-questao">
+                                <label>Qual a data de fundação de Singapura?</label>
+                                <br>
+                                <input type="date" name="data-de-fundacao">
+                            </li>
+                            <br>
+                            <li class="wrapper-questao">
+                                <label>Qual é a moeda de Singapura?</label>
+                                <br>
+                                <input type="text" name="moeda" required>
+                            </li>
+                            <br>
+                            <li class="wrapper-questao">
+                                <label>Como é conhecida Singapura?</label>
+                                <br>
+                                <ul style="list-style: lower-alpha;">
+                                    <li><input type="radio" name="q2" value="1"> <label>Lion City</label></li>
+                                    <li><input type="radio" name="q2" value="2"> <label>Lion Bay</label></li>
+                                    <li><input type="radio" name="q2" value="3"> <label>City Bay</label></li>
+                                </ul>
+                            </li>
+                            <br>
+                            <li class="wrapper-questao">
+                                <label>Quais as construções mais incríveis de Singapura?</label>
+                                <ul style="list-style: lower-alpha;">
+                                    <li><input type="checkbox" name="construção-incrivel" value="a">Marina Bay Sands
+                                    </li>
+                                    <li><input type="checkbox" name="construção-incrivel" value="b">Esplanade</li>
+                                    <li><input type="checkbox" name="construção-incrivel" value="c">The Interlace
+                                    </li>
+                                    <li><input type="checkbox" name="construção-incrivel" value="d">Gardens by the
+                                        Bay</li>
+                                </ul>
+                            </li>
+                            <br>
+                            <li class="wrapper-questao">
+                                <label>Qual é a maior e mais alta piscina infinita de Singapura?</label>
+                                <br>
+                                <select name="piscina-infinita-mais-alta" multiple size="4">
+                                    <option value="a">Address Beach Resort</option>
+                                    <option value="b">Piscina Olimpica de Algés</option>
+                                    <option value="c">Marina Bay Sands - Sky Park</option>
+                                    <option value="d">Ubud Hanging Gardens</option>
+                                </select>
+                            </li>
+                            <br>
+                            <li class="wrapper-questao">
+                                <label>Quais as cores da bandeira de Singapura?</label>
+                                <br>
+                                <label><input type="color" name="badeira-cor-1" size="10"></label>
+                                <label><input type="color" name="badeira-cor-2"></label>
+                            </li>
+                            <br>
+                            <li class="wrapper-questao">
+                                <label>Qual o nome deste jardim?</label>
+                                <br>
+                                <img src="images/Gardens by the Bay.png" alt="Gardens by the Bay" width="300">
+                                <br>
+                                <input list="nome-jardim" id="nome-jardim-input" name="nome-jardim-input">
+                                <datalist id="nome-jardim">
+                                    <option value="Jardim Zoologico">
+                                    <option value="Jardim da Estrela">
+                                    <option value="Gardens by the Bay">
+                                    <option value="Convent Gardens">
+                                </datalist>
+                            </li>
+                            <br>
+                            <li class="wrapper-questao">
+                                <label>Qual a altura do edifício modular mais alto do mundo que fica em Singapura
+                                    ?</label>
+                                <br>
+                                <input type="number" min="1" max="400" id="comprimento-ponte" size="4">
+                            </li>
+                            <br>
+                            <li class="wrapper-questao">
+                                <label>Numa escala de 1 a 5, quão provável será visitar Singapura?</label>
+                                <br>
+                                <input type="range" name="visitar-singapura" min="1" max="5">
+                            </li>
+                            <br>
+                            <li class="wrapper-questao">
+                                <label>Deixe os seus comentários sobre este quizz.</label><br>
+                                <textarea rows="2" style="width: 70%;"></textarea>
+                            </li>
+                            <br>
+                        </ol>
+                        <button type="submit">Enviar Respostas</button>
+                    </fieldset>
+                </fieldset>
+            </section>
+        </section>
+    </main>
+</body>
+
+
+<br>
+<br>
+<footer>Vera Tavares | a21700054 | ULHT - Universidade Lusófona de Humanidades e Tecnologias | 2023</footer>
+
+</html>
