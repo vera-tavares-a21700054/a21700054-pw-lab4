@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Video Page</title>
+    <meta name="viewport" content="width=device width, initial scale=1.0">
+    <meta charset="utf-8">
+    <meta name="author" content="Vera Tavares">
+    <meta name="description" content="Website sobre Singapura">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos_video.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+    <section>
+        <video autoplay muted loop id="myVideo">
+            <source src="images/video_1.mp4">
+        </video>
+
+        <div class="content">
+            <h1><span
+                    style="color:rgb(115, 117, 117); font-weight:bold; font-size:xx-large; font-style: oblique; text-align: center;">Singapura</span>
+            </h1>
+            <p><span
+                    style="color:rgb(115, 117, 117); font-weight:bold; font-size:x-large; font-style: oblique; text-align: center;">Um
+                    mundo para descobrir</span></p>
+            <button id="myBtn" onclick="myFunction()">Pause</button>
+            <div class="wrapper">
+                <nav>
+                    <a href="index.html" span style="color:rgb(115, 117, 117); font-weight:bold; text-align: right;">Home</a>
+                    <!-- <div class="dropdown">
+                        <button class="dropbtn">Conteúdos<i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="paralax.html">Paralax</a>
+                            <a href="video.html">Video</a>
+                            <a href="animacoes.html">Animações</a>
+                            <a href="grid1.html">Grid1</a>
+                            <a href="grid2.html">Grid2</a>
+                            <a href="grid3.html">Grid3</a>
+                            <a href="grid4.html">Grid4</a>
+                            <a href="grid5.html">Grid5</a>
+                            <a href="grid6.html">Grid6</a>
+                        </div>
+                    </div> -->
+                </nav>
+            </div>
+        </div>
+
+        <script>
+            var video = document.getElementById("myVideo");
+
+            var btn = document.getElementById("myBtn");
+
+            function myFunction() {
+                if (video.paused) {
+                    video.play();
+                    btn.innerHTML = "Pause";
+                } else {
+                    video.pause();
+                    btn.innerHTML = "Play";
+                }
+            }
+        </script>
+    </section>
+</body>
+
+</html>

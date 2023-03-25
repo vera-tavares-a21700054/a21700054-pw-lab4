@@ -2,14 +2,42 @@
 <html lang="pt">
 
 <head>
+    <title>Grid2</title>
+    <meta name="viewport" content="width=device width, initial scale=1.0">
     <meta charset="utf-8">
     <meta name="author" content="Vera Tavares">
+    <meta name="description" content="Website sobre Singapura">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos_animacoes.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 
 <body>
+    <header>
+        <h1>Grid2</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <div class="dropdown">
+                <button class="dropbtn">
+                    Conteúdos
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="paralax.html">Paralax</a>
+                    <a href="video.html">Video</a>
+                    <a href="animacoes.html">Animações</a>
+                    <a href="grid1.html">Grid1</a>
+                    <a href="grid2.html">Grid2</a>
+                    <a href="grid3.html">Grid3</a>
+                    <a href="grid4.html">Grid4</a>
+                    <a href="grid5.html">Grid5</a>
+                    <a href="grid6.html">Grid6</a>
+                </div>
+            </div>
+        </nav>
+    </header>
     <div class="grid-container">
         <div class="item1"></div>
         <div class="item2"></div>
@@ -24,63 +52,107 @@
         <div class="item4"></div>
         <div class="item5"></div>
     </div>
+
+    <style>
+        .item1 {
+            grid-area: header;
+            width: 100%;
+            background-image: url("images/grid2.JPG");
+            background-size: cover;
+        }
+
+        .item2 {
+            grid-area: nav;
+            background-color: rgb(189, 188, 186);
+        }
+
+        .item3 {
+            grid-area: main;
+            display: grid;
+            column-gap: 10px;
+            row-gap: 10px;
+            grid-template-columns: auto auto;
+            background-color: rgb(134, 224, 210);
+        }
+
+        .item4 {
+            grid-area: right;
+            background-color: rgb(138, 224, 210);
+        }
+
+        .item5 {
+            grid-area: footer;
+            width: 100%;
+            height: 100%;
+            background-image: url("images/grid2.JPG");
+            background-size: cover;
+        }
+
+        .grid-container {
+            display: grid;
+            height: 800px;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr 5fr 1fr;
+            grid-template-areas:
+                'header header header'
+                'main   nav    right'
+                'main footer footer';
+        }
+
+        .grid-item {
+            background-color: rgb(173, 228, 230);
+            border: 1px solid black;
+            padding: 20px;
+            font-size: 30px;
+            text-align: center;
+            margin: 20px;
+        }
+
+        @media only screen and (max-width:600px) and (orientation:portrait) {
+            .grid-container {
+                display: grid;
+                width: 100vw;
+                height: 100vh;
+                grid-template-columns: 1fr;
+                grid-template-rows: 9vw 7vw 1fr 7vw 7vw;
+                grid-template-areas:
+                    'header'
+                    'menu'
+                    'main'
+                    'right'
+                    'footer';
+            }
+        }
+
+        @media only screen and (max-width:600px) and (orientation:landscape) {
+            .grid-container {
+                display: grid;
+                width: 100vw;
+                height: 100vh;
+                grid-template-rows: 9vw 1fr;
+                grid-template-columns: 3fr 3fr;
+                grid-template-areas:
+                    'menu header'
+                    'main right'
+                    'footer footer';
+            }
+        }
+
+        @media only screen and (min-width:601px) {
+            .grid-container {
+                display: grid;
+                width: 100vw;
+                height: 100vh;
+                grid-template-rows: 9vw 1fr 7vw;
+                grid-template-columns: 1fr 3fr 1fr;
+                grid-template-areas:
+                    'header header header'
+                    'main   nav    right'
+                    'main footer footer';
+            }
+        }
+    </style>
+    <footer>Vera Tavares | a21700054 | ULHT - Universidade Lusófona de Humanidades e Tecnologias | 2023</footer>
 </body>
-
-<style>
-    .item1 {
-        grid-area: header;
-        width: 100%;
-        background-image: url("images/grid2.JPG");
-        background-size: cover;
-    }
-
-    .item2 {
-        grid-area: nav;
-        background-color: rgb(189, 188, 186);
-    }
-
-    .item3 {
-        grid-area: main;
-        display: grid;
-        column-gap: 10px;
-        row-gap: 10px;
-        grid-template-columns: auto auto ;
-        background-color: rgb(134, 224, 210);
-    }
-
-    .item4 {
-        grid-area: right;
-        background-color: rgb(138, 224, 210);
-    }
-
-    .item5 {
-        grid-area: footer;
-        width: 100%;
-        height: 100%;
-        background-image: url("images/grid2.JPG");
-        background-size: cover;
-    }
-
-    .grid-container {
-        display: grid;
-        height: 800px;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr 5fr 1fr;
-        grid-template-areas:
-            'header header header'
-            'nav nav nav'
-            'main main right'
-            'footer footer footer';
-    }
-
-    .grid-item {
-        background-color: rgb(173, 228, 230);
-        border: 1px solid black;
-        padding: 20px;
-        font-size: 30px;
-        text-align: center;
-        margin: 20px;
-    }
-</style>
 
 </html>

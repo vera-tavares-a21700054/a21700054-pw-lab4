@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Animações</title>
+    <meta name="viewport" content="width=device width, initial scale=1.0">
+    <meta charset="utf-8">
+    <meta name="author" content="Vera Tavares">
+    <meta name="description" content="Website sobre Singapura">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos_animacoes.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>Animações</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <div class="dropdown">
+                <button class="dropbtn">
+                    Conteúdos
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="paralax.html">Paralax</a>
+                    <a href="video.html">Video</a>
+                    <a href="animacoes.html">Animações</a>
+                    <a href="grid1.html">Grid1</a>
+                    <a href="grid2.html">Grid2</a>
+                    <a href="grid3.html">Grid3</a>
+                    <a href="grid4.html">Grid4</a>
+                    <a href="grid5.html">Grid5</a>
+                    <a href="grid6.html">Grid6</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section>
+        <h2 span style="font-weight:bold; font-size:xx-large; text-align:center;">Poema</span></h2>
+        <div class="poema">
+            <div>
+                <p>“An elegant orchid in full bloom,</p>
+                <p>A nation of harmony, peace and justice...</p>
+                <p>Singapore??? They ask.</p>
+                <p>What race are those people?</p>
+                <p>As they guess and ponder...</p>
+                <p>Different ethnic foods hold the answers.”</p>
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+    </section>
+    <main>
+        <section>
+            <h2 span style="font-weight:bold; font-size:xx-large; text-align:center;">Figuras Geométricas</span></h2>
+            <div>
+                <svg width="300" height="300">
+                    <rect x="0" y="0" width="150" height="150" fill="aquamarine">
+                        <animate attributeName="x" from="0" to="100" dur="3s" repeatCount="indefinite" />
+                        <animate attributeName="y" from="0" to="100" dur="3s" repeatCount="indefinite" />
+                    </rect>
+                    <polygon points="100,150 150,150 125,175" fill="lightsalmon">
+                        <animate attributeName="points" from="100,150 150,150 125,175" to="150,150 175,175 125,200"
+                            dur="3s" repeatCount="indefinite" />
+                    </polygon>
+                    <circle cx="200" cy="50" r="100" fill="grey">
+                        <animate attributeName="r" from="0" to="40" dur="3s" repeatCount="indefinite" />
+                        <animate attributeName="cy" from="50" to="150" dur="3s" repeatCount="indefinite" />
+                    </circle>
+                </svg>
+            </div>
+        </section>
+        <section>
+            <h2 span style="font-weight:bold; font-size:xx-large; text-align:center;">Transformações e Transições</span>
+            </h2>
+            <div>
+                <div class="animacao-1"></div>
+                <div class="animacao-2"></div>
+            </div>
+        </section>
+        <section>
+            <h2 span style="font-weight:bold; font-size:xx-large; text-align:center;">@Keyframes</span></h2>
+            <div>
+                <div class="animacao-3"></div>
+                <div class="animacao-4"></div>
+            </div>
+        </section>
+        <section>
+            <h2 span style="font-weight:bold; font-size:xx-large; text-align:center;">Efeitos</span></h2>
+            <div>
+                <div class="efeito-1"></div>
+                <div class="efeito-2"></div>
+            </div>
+        </section>
+    </main>
+    <br>
+    <br>
+    <footer>Vera Tavares | a21700054 | ULHT - Universidade Lusófona de Humanidades e Tecnologias | 2023</footer>
+</body>
+
+</html>

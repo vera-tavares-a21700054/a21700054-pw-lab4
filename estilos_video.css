@@ -1,0 +1,123 @@
+* {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: lighter;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:  rgb(173, 240, 225);
+    color: grey;
+}
+
+nav {
+    overflow: hidden;
+    background-color:  rgb(173, 240, 225);
+}
+
+nav a {
+    float: right;
+    font-size: 16px;
+    color: rgb(115, 117, 117);
+    text-align: center;
+    text-decoration: none;
+    margin: 30px;
+}
+
+nav a:hover,
+.dropdown:hover .dropbtn {
+  background-color:  rgb(173, 240, 225);
+}
+
+.dropdown {
+    float: right;
+    overflow: hidden;
+    margin-right: 50px;
+}
+
+.dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: rgb(115, 117, 117);
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgb(173, 240, 225);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgb(173, 240, 225);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #167569;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    opacity: 0.8;
+}
+
+.content {
+    position: fixed;
+    bottom: 0;
+    background:  rgb(173, 240, 225);
+    color: rgb(115, 117, 117);
+    width: 100%;
+    padding: 20px;
+}
+
+#myBtn {
+    width: 200px;
+    font-size: 18px;
+    padding: 10px;
+    border: none;
+    background: #000;
+    color: rgb(115, 117, 117);
+    cursor: pointer;
+}
+
+#myBtn:hover {
+    background:rgb(115, 117, 117);
+    color: black;
+}
+
+footer {
+    text-align: center;
+    background-color:  rgb(173, 240, 225);
+    padding: 10px 10px;
+    color: rgb(115, 117, 117);
+}

@@ -6,100 +6,64 @@
 
 * {
   box-sizing: border-box;
-  padding: 10;
-  margin: 10;
 }
 
-html,
+
 body {
   height: 100%;
-  margin: 0;
+  width: 100%;
+
 }
 
 header {
   text-align: center;
-  margin-bottom: 4rem;
-}
-
-
-header ul {
-  display: flex;
-  list-style: none;
-  background-color: rgb(35, 35, 35);
-  margin: 0px;
-  padding: 10px 10px;
-  justify-content: center;
-}
-
-header ul li>a {
   margin-right: 10px;
   margin-right: 10px;
-  background-color: rgb(173, 240, 225);
-  color: rgb(116, 115, 117);
-  ;
-  text-decoration: none;
+  background-color:  rgb(173, 240, 225);
+  color:  rgb(173, 240, 225);
+  text-decoration:dotted;
 }
 
-nav {
-  text-align: center;
-  background-color: rgb(48, 6, 97);
-  padding: 12px 12px;
-  color: white;
-  margin-top: 3rem;
-}
-
-.img-cover {
-  height: 100%;
-  width: 100%f;
-  background-image: url("images/Singapura4.jpeg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-}
 
 nav {
   overflow: hidden;
-  background-color: #333;
 }
 
 nav a {
   float: right;
   font-size: 16px;
-  color: white;
+  color:rgb(115, 117, 117);
   text-align: center;
-  padding: 14px 16px;
   text-decoration: none;
 }
 
 nav a:hover,
 .dropdown:hover .dropbtn {
-  background-color: rgb(113, 116, 114);
+  background-color:rgb(173, 240, 225);
 }
 
 .dropdown {
   float: right;
   overflow: hidden;
+  margin-right: 50px;
 }
 
 .dropdown .dropbtn {
   font-size: 16px;
   border: none;
   outline: none;
-  color: white;
+  color:rgb(115, 117, 117);
   padding: 14px 16px;
   background-color: inherit;
   font-family: inherit;
-  margin: 0;
 }
-
-
 
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #70bda9;
+  background-color: rgb(173, 240, 225);
   min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(188, 189, 188, 0.2);
+  box-shadow: 0px 8px 16px 0px rgb(173, 240, 225);
   z-index: 1;
 }
 
@@ -120,52 +84,26 @@ nav a:hover,
   display: block;
 }
 
-@media (max-width: 600px) {
-  body {
-    background-color: #70bda9;
-      display: grid;
-      width: 100vw;
-      height: 100vh;
-
-      grid-template-columns: 1fr;
-      grid-template-rows: 9vw 7vw 1fr 7vw 7vw;
-
-      grid-template-areas:
-      'header'
-      'menu'
-      'main'
-      'aside'
-      'footer';
-      } 
- 
-    header {grid-area: header;}
-    nav {grid-area: menu;}
-    main {grid-area: main;}
-    aside { grid-area: right;}
-   footer { grid-area: footer;}
-
+.pos-relative img {
+  position: relative;
+  width: 100%;
+  top: 20px;
 }
 
+.pos-relative {
+  position: relative;
+}
 
-@media (min-width: 601px) {
-  body {
-    display: grid;
-    width: 100vw;
-    height: 100vh;
-    grid-template-rows: 9vw 1fr 7vw;
-    grid-template-columns: 1fr 3fr 1fr;
-
-    grid-template-areas:
-      'header header  header'
-      'menu   main    aside'
-      'footer footer footer';
-  }
+.pos-absolute {
+  position: absolute;
+  top: 10px; left: 10px;
+  font-size: 4rem;
+  color:rgb(115, 117, 117);
 }
 
 footer {
   text-align: center;
-  background-color: rgb(48, 6, 97);
+  background-color:   rgb(173, 240, 225);
   padding: 10px 10px;
-  color: white;
-  margin-top: 3rem;
+  color:rgb(115, 117, 117);
 }
