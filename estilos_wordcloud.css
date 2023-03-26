@@ -7,40 +7,7 @@
     box-sizing: border-box;
 }
 
-div.parallax {
-    margin: 30px;
-    border: 1px solid black;
-}
 
-
-
-
-@media only screen and (min-width:601px) {
-    .parallax {
-        background-image: url("images/unsplash_Singapura1.jpg");
-        min-height: 400px;
-        background-attachment: fixed;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-
-}
-
-
-
-
-@media only screen and (max-width:600px) {
-    .parallax {
-        background-image: url("images/unsplash_Singapura2.jpg");
-        min-height: 400px;
-        background-attachment: fixed;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-
-}
 
 header {
     display: flex;
@@ -116,12 +83,12 @@ nav a:hover,
 
 
 section {
-    margin: 50px 0;
+    margin: 10px 0;
 }
 
 
 h2 {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 footer {
